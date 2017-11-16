@@ -1,0 +1,10 @@
+base=$(basename "$@" .log)
+tmp=/tmp/gipeda-aeson/$base
+mkdir -p $tmp/
+unzip -qo $@ -d $tmp/
+cat $tmp/err
+for i in $tmp/*.json
+do
+  btype=$(basename $i .json|sed "s/aeson-benchmark-//")
+  ./prune_criterion_json.hs < $i |sed "s%^%$btype/%"
+done

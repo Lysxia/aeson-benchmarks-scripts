@@ -1,0 +1,19 @@
+title: aeson
+diffLink: "https://git.nomeata.org/?p=gipeda.git;a=commitdiff;h={{rev}};hp={{base}}"
+revisionInfo: '<a href="https://github.com/bos/aeson/commit/{{rev}}">View Diff</a>'
+limitRecent: 5
+start: 3e5b02876c36d7471534c558b61ee5ff0e705a96
+interestingTags: "1.2.*"
+interestingBranches: "master"
+
+benchmarks:
+  - match: "*"
+    unit: s
+    type: float
+    unitFull: seconds
+    group: Benchmarks
+  - match: "compile"
+    unit: s
+    type: float
+    unitFull: seconds
+    group: Compile time
