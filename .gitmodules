@@ -1,0 +1,3 @@
+[submodule "logs"]
+	path = logs
+	url = https://github.com/Lysxia/aeson-benchmarks-logs.git
